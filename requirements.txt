@@ -1,0 +1,9 @@
+openai
+flask
+requests
+sqlalchemy
+beautifulsoup4
+lxml
+httpx
+python-dotenv
+flake8
