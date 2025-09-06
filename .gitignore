@@ -1,0 +1,9 @@
+# Ignore environment file (contains API keys)
+.env
+
+# Ignore SQLite database
+data.db
+
+# Ignore Python cache
+__pycache__/
+*.pyc
