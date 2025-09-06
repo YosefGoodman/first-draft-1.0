@@ -53,3 +53,27 @@ def get_recent_context(user_id, limit=5):
     context = [f"User: {r[0]} | Bot: {r[1]}" for r in rows]
     return context
 
+
+
+
+
+#or
+#Initialize Local Database 
+import sqlite3  
+import json  
+  
+def init_database():  
+    conn = sqlite3.connect('chatbot_memory.db')  
+    cursor = conn.cursor()  
+    cursor.execute('''  
+        CREATE TABLE IF NOT EXISTS conversations (  
+            id INTEGER PRIMARY KEY,  
+            user_input TEXT,  
+            context TEXT,  
+            response TEXT,  
+            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP  
+        )  
+    ''')  
+    conn.commit()  
+    return conn
+#end
