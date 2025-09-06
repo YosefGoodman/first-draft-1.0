@@ -1,5 +1,5 @@
 # Ignore environment file (contains API keys)
-.env
+api.env
 
 # Ignore SQLite database
 data.db
