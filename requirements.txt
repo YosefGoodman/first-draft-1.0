@@ -1,3 +1,7 @@
+
+#core installations needed before importing
+
+
 # Core
 openai
 flask
