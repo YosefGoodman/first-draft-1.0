@@ -1,10 +1,25 @@
+# Core
 openai
 flask
 requests
+
+# Database (only if you prefer something beyond built-in sqlite3)
 sqlalchemy
+
+# Scraping (optional)
 beautifulsoup4
 lxml
+
+# Async support (optional, helps with multiple APIs)
 httpx
+
+# For environment variables
 python-dotenv
+
+#linting
 flake8
+
+#testing
 pytest
+
+
